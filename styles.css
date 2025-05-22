@@ -1,0 +1,109 @@
+.redirect {
+    text-decoration: none;
+    color: black;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Czyszczenie floatów - clearfix na kontener */
+  .body::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  div#style1:target ~ div#gorny,
+  div#style1:target ~ div#glowny,
+  div#style1:target ~ div#boczny,
+  div#style1:target ~ div#stopka,
+  div#style1:target ~ ul#lewy li a {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Górny - pełna szerokość */
+  div#style1:target ~ div#gorny {
+    background-color: rgb(8,169,109);
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  div#style1:target ~ div#gorny h1,
+  div#style1:target ~ div#gorny p {
+    margin: -5px -5px 0 -5px;
+  }
+  
+  div#style1:target ~ div#gorny p {
+    font-size: 15px;
+  }
+  
+  /* Lewy - float left */
+  div#style1:target ~ ul#lewy {
+    float: left;
+    width: 190px;
+    padding-left: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+  
+  div#style1:target ~ ul#lewy li {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  div#style1:target ~ ul#lewy li a {
+    display: block;
+    width: 100%;
+    background-color: rgb(241,241,241);
+    color: black;
+    padding: 7px 20px 8px 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  div#style1:target ~ ul#lewy li a#selector {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  /* Boczny - float right */
+  div#style1:target ~ div#boczny {
+    margin-top: 10px;
+    margin-right: 15px;
+    float: right;
+    width: 190px;
+    color: white;
+    background-color: rgb(50,164,231);
+    word-spacing: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 25px;
+    box-sizing: border-box;
+  }
+  
+  /* Główny - marginesy z lewej i prawej (szerokość lewego i bocznego) */
+  div#style1:target ~ div#glowny {
+    margin-left: 190px;
+    margin-right: 190px;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 200px; /* opcjonalnie, żeby było widać */
+  }
+  
+  /* Stopka - clear floatów, pełna szerokość pod wszystkimi */
+  div#style1:target ~ div#stopka {
+    clear: both;
+    background-color: rgb(241,241,241);
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+  
