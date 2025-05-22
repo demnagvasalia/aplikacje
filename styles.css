@@ -4,7 +4,6 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Czyszczenie floatów - clearfix na kontener */
   .body::after {
     content: "";
     display: table;
@@ -37,7 +36,6 @@
     font-size: 15px;
   }
   
-  /* Lewy - float left */
   div#style1:target ~ ul#lewy {
     float: left;
     width: 190px;
@@ -70,7 +68,6 @@
     color: white;
   }
   
-  /* Boczny - float right */
   div#style1:target ~ div#boczny {
     margin-top: 10px;
     margin-right: 15px;
@@ -85,17 +82,15 @@
     box-sizing: border-box;
   }
   
-  /* Główny - marginesy z lewej i prawej (szerokość lewego i bocznego) */
   div#style1:target ~ div#glowny {
     margin-left: 190px;
     margin-right: 190px;
     background-color: #fff;
     padding: 10px;
     box-sizing: border-box;
-    min-height: 200px; /* opcjonalnie, żeby było widać */
+    min-height: 200px;
   }
   
-  /* Stopka - clear floatów, pełna szerokość pod wszystkimi */
   div#style1:target ~ div#stopka {
     clear: both;
     background-color: rgb(241,241,241);
