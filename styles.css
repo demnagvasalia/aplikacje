@@ -17,8 +17,7 @@
   div#style1:target ~ ul#lewy li a {
     font-family: Arial, sans-serif;
   }
-  
-  /* Górny - pełna szerokość */
+
   div#style1:target ~ div#gorny {
     background-color: rgb(8,169,109);
     width: 100%;
